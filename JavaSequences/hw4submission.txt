@@ -1,0 +1,189 @@
+[daniel93@pc44 HW4]$ test_all
+======== part1 ========
+/bin/rm -f *.class *~ Output.your
+javac        Main.java
+javac -Xlint Constant.java Delta.java Jumble.java Seq.java
+java Main > Output.your 2>&1
+diff Output.correct Output.your
+/bin/rm -f *.class *~ Output.your
+======== part2 ========
+/bin/rm -f *.class *~ Output.your
+javac        Main.java
+javac -Xlint Constant.java Delta.java Jumble.java Seq.java
+java Main > Output.your 2>&1
+diff Output.correct Output.your
+/bin/rm -f *.class *~ Output.your
+======== part3 ========
+/bin/rm -f *.class *~ Output.your Output.your1 Output.your2 Output.your3
+javac        Main.java
+javac -Xlint ConstantIt.java Constant.java DeltaIt.java Delta.java JumbleIt.java Jumble.java JumbleUser.java SeqIt.java Seq.java
+java Main > Output.your 2>&1
+diff Output.correct Output.your
+if java Main ConstantIt > Output.your1 2>&1; then echo "wrong exit status"; else echo "OK"; fi
+OK
+diff Output.correct1 Output.your1
+if java Main DeltaIt > Output.your2 2>&1; then echo "wrong exit status"; else echo "OK"; fi
+OK
+diff Output.correct2 Output.your2
+if java Main JumbleIt > Output.your3 2>&1; then echo "wrong exit status"; else echo "OK"; fi
+OK
+diff Output.correct3 Output.your3
+/bin/rm -f *.class *~ Output.your Output.your1 Output.your2 Output.your3
+======== part4 ========
+/bin/rm -f *.class *~ Output.your
+javac        Main.java
+javac -Xlint ConstantIt.java Constant.java DeltaIt.java Delta.java JumbleIt.java Jumble.java JumbleUser.java SeqIt.java Seq.java UsingIteratorPastEndException.java
+java Main > Output.your 2>&1
+diff Output.correct Output.your
+/bin/rm -f *.class *~ Output.your
+======== part5 ========
+/bin/rm -f *.class *~ Output.your
+javac        Main.java
+javac -Xlint ConstantIt.java Constant.java DeltaIt.java Delta.java JumbleIt.java Jumble.java JumbleUser.java SeqIt.java Seq.java UsingIteratorPastEndException.java
+java Main > Output.your 2>&1
+diff Output.correct Output.your
+/bin/rm -f *.class *~ Output.your
+======== part6 ========
+/bin/rm -f *.class *~ Output.your
+javac        Main.java
+javac -Xlint ConstantIt.java Constant.java DeltaIt.java Delta.java JumbleIt.java Jumble.java JumbleUser.java Plus.java SeqIt.java Seq.java UsingIteratorPastEndException.java
+java Main > Output.your 2>&1
+diff Output.correct Output.your
+/bin/rm -f *.class *~ Output.your
+======== part7 ========
+/bin/rm -f *.class *~ Output.your
+javac        Main.java
+javac -Xlint ConstantIt.java Constant.java DeltaIt.java Delta.java JumbleIt.java Jumble.java JumbleUser.java Plus.java SeqIt.java Seq.java UsingIteratorPastEndException.java
+java Main > Output.your 2>&1
+diff Output.correct Output.your
+/bin/rm -f *.class *~ Output.your
+======== part8 ========
+/bin/rm -f *.class *~ Output.your
+javac        Main.java
+javac -Xlint ConstantIt.java Constant.java DeltaIt.java Delta.java JumbleIt.java Jumble.java JumbleUser.java Plus.java SeqIt.java Seq.java UsingIteratorPastEndException.java
+java Main > Output.your 2>&1
+diff Output.correct Output.your
+/bin/rm -f *.class *~ Output.your
+[daniel93@pc44 HW4]$ ls
+part1  part2  part3  part4  part5  part6  part7  part8  README  test_all
+[daniel93@pc44 HW4]$ rm test_all
+rm: remove regular file ‘test_all’? y
+[daniel93@pc44 HW4]$ ls
+part1  part2  part3  part4  part5  part6  part7  part8  README
+[daniel93@pc44 HW4]$ ~cs140ar/bin/submit cs140ar hw4
+Submitting...
+./
+./README
+./part1/
+./part1/Constant.java
+./part1/Delta.java
+./part1/Jumble.java
+./part1/Main.java
+./part1/Makefile
+./part1/Output.correct
+./part1/Seq.java
+./part2/
+./part2/Constant.java
+./part2/Delta.java
+./part2/Jumble.java
+./part2/Main.java
+./part2/Makefile
+./part2/Output.correct
+./part2/Seq.java
+./part3/
+./part3/Constant.java
+./part3/ConstantIt.java
+./part3/Delta.java
+./part3/DeltaIt.java
+./part3/Jumble.java
+./part3/JumbleIt.java
+./part3/JumbleUser.java
+./part3/Main.java
+./part3/Makefile
+./part3/Output.correct
+./part3/Output.correct1
+./part3/Output.correct2
+./part3/Output.correct3
+./part3/Seq.java
+./part3/SeqIt.java
+./part4/
+./part4/Constant.java
+./part4/ConstantIt.java
+./part4/Delta.java
+./part4/DeltaIt.java
+./part4/Jumble.java
+./part4/JumbleIt.java
+./part4/JumbleUser.java
+./part4/Main.java
+./part4/Makefile
+./part4/Output.correct
+./part4/Seq.java
+./part4/SeqIt.java
+./part4/UsingIteratorPastEndException.java
+./part5/
+./part5/Constant.java
+./part5/ConstantIt.java
+./part5/Delta.java
+./part5/DeltaIt.java
+./part5/Jumble.java
+./part5/JumbleIt.java
+./part5/JumbleUser.java
+./part5/Main.java
+./part5/Makefile
+./part5/Output.correct
+./part5/Seq.java
+./part5/SeqIt.java
+./part5/UsingIteratorPastEndException.java
+./part6/
+./part6/Constant.java
+./part6/ConstantIt.java
+./part6/Delta.java
+./part6/DeltaIt.java
+./part6/Jumble.java
+./part6/JumbleIt.java
+./part6/JumbleUser.java
+./part6/Main.java
+./part6/Makefile
+./part6/Output.correct
+./part6/Plus.java
+./part6/Seq.java
+./part6/SeqIt.java
+./part6/UsingIteratorPastEndException.java
+./part7/
+./part7/Constant.java
+./part7/ConstantIt.java
+./part7/Delta.java
+./part7/DeltaIt.java
+./part7/Jumble.java
+./part7/JumbleIt.java
+./part7/JumbleUser.java
+./part7/Main.java
+./part7/Makefile
+./part7/Output.correct
+./part7/Plus.java
+./part7/Seq.java
+./part7/SeqIt.java
+./part7/UsingIteratorPastEndException.java
+./part8/
+./part8/Constant.java
+./part8/ConstantIt.java
+./part8/Delta.java
+./part8/DeltaIt.java
+./part8/Jumble.java
+./part8/JumbleIt.java
+./part8/JumbleUser.java
+./part8/Main.java
+./part8/Makefile
+./part8/Output.correct
+./part8/Plus.java
+./part8/Seq.java
+./part8/SeqIt.java
+./part8/UsingIteratorPastEndException.java
+ok
+[*] Performing some submission checks
+[*] Done
+[daniel93@pc44 HW4]$ vi README
+[daniel93@pc44 HW4]$ ~cs140ar/bin/check_submit cs140ar hw4
+The following input files have been received:
+Mon Nov 10 16:47:11 2014        66445 bytes     daniel93.tar.gz
+[daniel93@pc44 HW4]$

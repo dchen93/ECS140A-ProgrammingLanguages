@@ -1,0 +1,134 @@
+;; Dribble of #<io terminal-stream> started on 2014-11-15 01:51:22.
+
+          BEGIN TESTING
+
+
+                    TEST-DOUBLE
+
+
+                              TEST-A-DOUBLE on:  double-recursive
+
+testing:  (double-fun nil)
+value:    nil
+
+testing:  (double-fun 44)
+value:    nil
+
+testing:  (double-fun 'a)
+value:    nil
+
+testing:  (double-fun '(44))
+value:    (44 44)
+
+testing:  (double-fun '(44 55))
+value:    (44 44 55 55)
+
+testing:  (double-fun '(1 2 3))
+value:    (1 1 2 2 3 3)
+
+testing:  (double-fun '(11 12 13 14))
+value:    (11 11 12 12 13 13 14 14)
+
+testing:  (double-fun '(1 (2 3) 4))
+value:    (1 1 (2 3) (2 3) 4 4)
+
+testing:  (double-fun '(1 (2) (3 4) (5 6 7) (8 (9 10) 11)))
+value:    (1 1 (2) (2) (3 4) (3 4) (5 6 7) (5 6 7) (8 (9 10) 11) (8 (9 10) 11))
+
+testing:  (double-fun '((111 112) (120) nil (140)))
+value:    ((111 112) (111 112) (120) (120) nil nil (140) (140))
+
+testing:  (double-fun '(((111 112)) ((120)) (nil) (140)))
+value:    (((111 112)) ((111 112)) ((120)) ((120)) (nil) (nil) (140) (140))
+
+testing:  (double-fun '(1 (2 3) ((((4))))))
+value:    (1 1 (2 3) (2 3) ((((4)))) ((((4)))))
+
+
+                              TEST-A-DOUBLE on:  double-mapcar
+
+testing:  (double-fun nil)
+value:    nil
+
+testing:  (double-fun 44)
+value:    nil
+
+testing:  (double-fun 'a)
+value:    nil
+
+testing:  (double-fun '(44))
+value:    (44 44)
+
+testing:  (double-fun '(44 55))
+value:    (44 44 55 55)
+
+testing:  (double-fun '(1 2 3))
+value:    (1 1 2 2 3 3)
+
+testing:  (double-fun '(11 12 13 14))
+value:    (11 11 12 12 13 13 14 14)
+
+testing:  (double-fun '(1 (2 3) 4))
+value:    (1 1 (2 3) (2 3) 4 4)
+
+testing:  (double-fun '(1 (2) (3 4) (5 6 7) (8 (9 10) 11)))
+value:    (1 1 (2) (2) (3 4) (3 4) (5 6 7) (5 6 7) (8 (9 10) 11) (8 (9 10) 11))
+
+testing:  (double-fun '((111 112) (120) nil (140)))
+value:    ((111 112) (111 112) (120) (120) nil nil (140) (140))
+
+testing:  (double-fun '(((111 112)) ((120)) (nil) (140)))
+value:    (((111 112)) ((111 112)) ((120)) ((120)) (nil) (nil) (140) (140))
+
+testing:  (double-fun '(1 (2 3) ((((4))))))
+value:    (1 1 (2 3) (2 3) ((((4)))) ((((4)))))
+
+
+                              TEST-A-DOUBLE on:  double-iterative
+
+testing:  (double-fun nil)
+value:    nil
+
+testing:  (double-fun 44)
+value:    nil
+
+testing:  (double-fun 'a)
+value:    nil
+
+testing:  (double-fun '(44))
+value:    (44 44)
+
+testing:  (double-fun '(44 55))
+value:    (44 44 55 55)
+
+testing:  (double-fun '(1 2 3))
+value:    (1 1 2 2 3 3)
+
+testing:  (double-fun '(11 12 13 14))
+value:    (11 11 12 12 13 13 14 14)
+
+testing:  (double-fun '(1 (2 3) 4))
+value:    (1 1 (2 3) (2 3) 4 4)
+
+testing:  (double-fun '(1 (2) (3 4) (5 6 7) (8 (9 10) 11)))
+value:    (1 1 (2) (2) (3 4) (3 4) (5 6 7) (5 6 7) (8 (9 10) 11) (8 (9 10) 11))
+
+testing:  (double-fun '((111 112) (120) nil (140)))
+value:    ((111 112) (111 112) (120) (120) nil nil (140) (140))
+
+testing:  (double-fun '(((111 112)) ((120)) (nil) (140)))
+value:    (((111 112)) ((111 112)) ((120)) ((120)) (nil) (nil) (140) (140))
+
+testing:  (double-fun '(1 (2 3) ((((4))))))
+value:    (1 1 (2 3) (2 3) ((((4)))) ((((4)))))
+
+
+                    TEST-RDOUBLE
+
+
+                              TEST-A-DOUBLE on:  rdouble
+
+testing:  (double-fun nil)
+value:    
+*** - funcall: undefined function rdouble
+

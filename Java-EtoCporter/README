@@ -1,0 +1,32 @@
+*** fill in the following;
+*** repeat it for each group member;
+*** list group members alphabetically by last name
+
+Chen, Daniel daniel93
+Chen, Evan echen4
+Umbrasas, Kristijonas kumbrasa
+Wheeler, Richard grawheel
+
+*** Give the status of your work; here's a sample.
+
+Status:
+
+part1: Works on all tests.
+part2: Works on all tests.
+part3: Works on all tests.
+part4: Works on all tests.
+part5: Instructor's decrement for the "for loop" functions was not working (not included). Thus, we adjusted our code to work with this.
+part6: Works on all tests
+
+Overall: Any comment/discussion related to this HW.
+
+Part 1 Questions:
+#1: Putback is used to skip comments and whitespaces from being tokens
+#2: c = o, putback = false
+#3: The case statements in this question are needed because they are required in guarded commands.
+	For example, / is the dividing symbol which can be used in an arithmetic problem for division. However,
+	if it is followed by a "=" symbol, this becomes a "!=" also known as "not equals" symbol.
+	Using annother example, - is the minus symbol which can be used in an arithmetic problem but if followed
+	by a ">" symbol, this becomes an arrow. Same goes for ":" which when followed by an "=" symbol,
+	it becomes an assignment operator.
+
